@@ -1,0 +1,96 @@
+// 输入框
+.el-select,
+.el-input {
+  width: 100%;
+  // select单独样式，需嵌套一层el-input
+  .el-input {
+    .el-select__caret {
+      color: var(--jat-color);
+    }
+  }
+  // el-input单独样式
+
+  // select 与 input 共有样式
+  .el-input__inner {
+    border-color: var(--el-input-border-color);
+    background: var(--el-input-bgcolor);
+    color: var(--jat-color);
+    &:hover,
+    &:active {
+      border-color: var(--el-input-border-hover-color);
+    }
+    &::-webkit-input-placeholder {
+      color: var(--el-input-placeholder-color);
+    }
+  }
+  &.is-disabled {
+    .el-input__inner {
+      background-color: var(--el-input-disabled-bgcolor);
+      border-color: var(--el-input-border-color);
+      &::-webkit-input-placeholder {
+        color: var(--el-input-placeholder-color);
+      }
+    }
+  }
+}
+// select下拉面板
+.el-select-dropdown.el-popper {
+  margin-top: 4px;
+  border: none;
+  background-color: var(--el-input-bgcolor);
+  // 下拉框的上箭头
+  .popper__arrow {
+    display: none;
+  }
+  // 下拉框内容
+  .el-select-dropdown__list {
+    .el-select-dropdown__item {
+      height: 28px;
+      line-height: 28px;
+      color: var(--el-select-dropdown__item-color);
+      &.hover {
+        background: var(--el-select-dropdown__item-bgcolor);
+      }
+      &.selected {
+        font-weight: var(--jat-fontWeight-normal);
+        color: var(--el-select-dropdown__item-active-color);
+      }
+    }
+  }
+}
+// el-textarea
+.el-textarea {
+  .el-textarea__inner {
+    border-color: var(--el-input-border-color);
+    background: var(--el-input-bgcolor);
+    color: var(--jat-color);
+    font-family: "element-icons";
+    &:hover,
+    &:active {
+      border-color: var(--el-input-border-hover-color);
+    }
+    &::-webkit-input-placeholder {
+      color: var(--el-input-placeholder-color);
+    }
+  }
+  &.is-disabled {
+    .el-textarea__inner {
+      background-color: var(--el-input-disabled-bgcolor);
+      border-color: var(--el-input-border-color);
+      &::-webkit-input-placeholder {
+        color: var(--el-input-placeholder-color);
+      }
+    }
+  }
+}
+// form 表单
+// TODO:目前ui图仅是上下布局，此样式暂时只支持上下结构
+.el-form.el-form--label-top {
+  .el-form-item {
+    margin-bottom: var(--jat-gutter);
+    .el-form-item__label {
+      padding-bottom: 0;
+      color: var(--el-form-label-color);
+    }
+  }
+}

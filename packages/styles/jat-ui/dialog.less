@@ -1,0 +1,41 @@
+.el-dialog {
+  background: var(--el-dialog-bgcolor);
+  border: 0.5px solid var(--el-dialog-border-color);
+  box-shadow: var(--el-dialog-shadow);
+  border-radius: 8px;
+  .el-dialog__header {
+    padding: 20px 24px 24px;
+    font-size: 18px;
+    color: var(--el-dialog-header-title-color);
+    line-height: 18px;
+    font-weight: var(--jat-fontWeight-semiBlod);
+    .jat-dialog-title {
+      display: flex;
+      justify-content: space-between;
+      .jat-dialog-title-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        flex: 1;
+      }
+      .jat-dialog-title-btns {
+        color: var(--el-dialog-header-btn-color);
+      }
+      .el-icon-close {
+        color: var(--el-dialog-header-btn-color);
+        font-size: 18px;
+        margin-left: 8px;
+      }
+    }
+  }
+  .el-dialog__body {
+    padding: 0 24px;
+    color: var(--jat-color);
+    max-height: var(--el-dialog-body-maxHeight);
+    min-height: var(--el-dialog-body-minHeight);
+    overflow: auto;
+  }
+  .el-dialog__footer {
+    padding: 20px 24px;
+  }
+}

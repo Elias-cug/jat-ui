@@ -1,0 +1,180 @@
+:root {
+  // ===========================================================================基本模块开始=====================================================================
+  // 字体
+  --jat-fontSize-small: 12px; //小型字体
+  --jat-fontSize-base: 14px; //正常字体
+  --jat-fontSize-medium: 16px; //顶部栏，侧边栏
+  --jat-fontSize-large: 20px; //标题
+  --jat-fontSize-extraLarge: 24px; //主标题
+
+  // 字体加粗
+  --jat-fontWeight-normal: 400;
+  --jat-fontWeight-medium: 500;
+  --jat-fontWeight-semiBlod: 600;
+  --jat-fontWeight-blod: 700;
+  --jat-fontWeight-heavy: 900;
+
+  // 主色调
+  --jat-color-primary: #167cf3;
+  --jat-color-success: #07b870;
+  --jat-color-warning: #faad14;
+  --jat-color-error: #fd5858;
+
+  // 通用字体颜色
+  --jat-title-color: #000;
+  --jat-color: #333;
+  // 通用间距
+  --jat-gutter: 16px;
+  // 筛选icon
+  --jat-filter-icon: #167cf3;
+  // ==========================================================================按钮模块开始-==============================================================
+  //--------------------------------- -----------------------------------------主体按钮组件
+  --jat-button-primary-bgcolor: linear-gradient(
+    241deg,
+    #167cf3 0%,
+    #167cf3 100%
+  ); //默认主体按钮背景色颜色
+  --jat-button-primary-hover-bgcolor: linear-gradient(
+    241deg,
+    #469bff 0%,
+    #469bff 100%
+  ); //移入主体按钮背景颜色
+  --jat-button-primary-text-color: #fff; //移入主体按钮背景颜色
+
+  // ------------------------------------------------------------------------------次要按钮组件
+  --jat-button-plain-bgcolor: linear-gradient(
+    241deg,
+    transparent 0%,
+    transparent 100%
+  ); //默认次要按钮背景色颜色
+  --jat-button-plain-hover-bgcolor: linear-gradient(
+    241deg,
+    rgba(22, 124, 243, 0.05) 0%,
+    rgba(22, 124, 243, 0.05) 100%
+  ); //移入次要按钮背景颜色
+  --jat-button-plain-borderColor: #167cf3; //默认次要按钮边框颜色
+  --jat-button-plain-text-color: #167cf3; //移入次要按钮背景颜色
+
+  //------------------------------------------------------------------------------ 禁点按钮颜色
+  --jat-button-disabled-color: #bac2cc; //默认禁点按钮颜色
+  --jat-button-disabled-plain-text-color: #bac2cc; //默认禁点按钮颜色
+  --jat-button-disabled-plain-hover-color: rgba(
+    22,
+    124,
+    243,
+    0.05
+  ); //次要按钮禁点按钮颜色
+
+  // ------------------------------------------------------------------------------删除按钮颜色
+  --jat-button-delete-bgcolor: linear-gradient(
+    241deg,
+    transparent 0%,
+    transparent 100%
+  ); //默认次要按钮背景色颜色
+  --jat-button-delete-hover-bgcolor: linear-gradient(
+    241deg,
+    rgba(253, 88, 88, 0.05) 0%,
+    rgba(253, 88, 88, 0.05) 100%
+  ); //移入次要按钮背景颜色
+  --jat-button-delete-borderColor: #fd5858; //默认次要按钮边框颜色
+  --jat-button-delete-text-color: #fd5858; //移入次要按钮背景颜色
+
+  // ---------------------------------------------------------------------------------文本按钮
+  --jat-button-primaryText-text-color: #167cf3; //按钮文字颜色
+  --jat-button-primaryText-hover-color: #3c96ff; //移入按钮文字颜色
+  --jat-button-primaryText-bgcolor: linear-gradient(
+    241deg,
+    transparent 0%,
+    transparent 100%
+  ); //按钮文字背景颜色
+  --jat-button-primaryText-hover-bgcolor: linear-gradient(
+    241deg,
+    transparent 0%,
+    transparent 100%
+  ); //移入按钮文字背景颜色
+  --jat-button-deleteText-text-color: #fd5858; //按钮文字颜色
+  --jat-button-deleteText-hover-color: #ff7979; //移入按钮文字颜色
+  --jat-button-deleteText-bgcolor: linear-gradient(
+    241deg,
+    transparent 0%,
+    transparent 100%
+  ); //按钮文字背景颜色
+  --jat-button-deleteText-hover-bgcolor: linear-gradient(
+    241deg,
+    transparent 0%,
+    transparent 100%
+  ); //移入按钮文字背景颜色
+  --jat-button-disabledText-text-color: #bac2cc;
+  --jat-button-disabledText-bgcolor: transparent;
+  --jat-button-textAll-style: underline;
+  // ============================================================================按钮模块结束================================================================================
+
+  // ============================================================================菜单模块开始====================================================================================
+  --jat-menu-bgcolor: #fff; //收起时二级菜单的背景色
+  --jat-menu-hover-bgcolor: #ebeff4; //收起时二级菜单移入或者选中的背景色
+  --jat-menu-title-color: #666; //收起时二级菜单文字颜色
+  --jat-menu-title-hover-color: #167cf3; //收起时二级菜单移入或者选中的文字颜色
+  // ============================================================================菜单模块结束====================================================================================
+
+  //============================================================================tabs模块开始====================================================================================
+  --jat-tab-bgcolor: #dbdde8; //tabs整条的背景色
+  --jat-tab--item-margin-right: 0px; //tabs单个的边框
+  --jat-tab--item-shadow: none; //tabs单个的shadow
+  --jat-tab-item-bgcolor: #e5e9f2; //tabs单个的背景色
+  --jat-tab-item-active-bgcolor: #fff; //tabs单个的背景色
+  --jat-tab-item-text-color: #333; //tabs单个的字体颜色
+  --jat-tab-item-close-bgcolor: #8c939c; //tabs关闭按钮的背景颜色
+  --jat-tab-item-close-active-bgcolor: #b5bdc7; //tabs关闭按钮的选中的背景颜色
+  //============================================================================tabs模块结束====================================================================================
+
+  //============================================================================Notice模块开始====================================================================================
+  --el-message-text-color: rgba(0, 0, 0, 0.9); //消息文字颜色
+  --el-message-close-color: #646566; //消息文字颜色
+  --el-message-success-bgcolor: #f0faf2; //消息成功背景色
+  --el-message-warning-bgcolor: #fff5ed; //消息警告背景色
+  --el-message-info-bgcolor: #edf4ff; //消息信息背景色
+  --el-message-error-bgcolor: #ffebeb; //消息错误背景色
+  //============================================================================Notice模块结束====================================================================================
+
+  // ==========================================================================cantainer模块开始===============================================
+  --jat-cantainer-bgcolor: #f4f5f9;
+  // ==========================================================================cantainer模块结束============================================
+
+  // ==========================================================================cantainer模块开始===============================================
+  --jat-card-bgcolor: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  // ==========================================================================cantainer模块结束============================================
+
+  // ===========================================================================form模块开始=======================================================================================
+  --el-input-bgcolor: #fff;
+  --el-input-border-color: #d5d5d5;
+  --el-input-border-hover-color: #167cf3;
+  --el-input-placeholder-color: #999;
+  --el-input-disabled-bgcolor: #eeeeee;
+  --el-select-dropdown__item-color: #666;
+  --el-select-dropdown__item-active-color: #167cf3;
+  --el-select-dropdown__item-bgcolor: #ebeff4;
+  --el-form-label-color: #666;
+  // ===========================================================================form模块结束=======================================================================================
+
+  // ===========================================================================table开始========================================================
+  --el-table--bgcolor: #fff;
+  --el-table--header-color: #ebeff4;
+  --el-table--border-color: #d5d5d5;
+  --el-table-cell--border-color: #ebeef5;
+  --el-table-row--hover: #fafbfc;
+  --el-table-dragline-color: #d5d5d5;
+  --el-table-sort-bg: #ebeff4;
+  --el-pagination-color: #323233;
+  // ===========================================================================table结束========================================================
+
+  // ============================================================================other模块开始============================================================================
+  // dialog对话框
+  --el-dialog-bgcolor: #fff;
+  --el-dialog-border-color: rgba(220, 220, 220, 1);
+  --el-dialog-shadow: 0px 0px 23px 1px rgba(168, 173, 185, 0.21);
+  --el-dialog-header-title-color: rgba(0, 0, 0, 0.9);
+  --el-dialog-header-btn-color: #646566;
+  --el-dialog-body-maxHeight: 70vh;
+  --el-dialog-body-minHeight: 66px;
+  // ============================================================================other模块结束============================================================================
+}

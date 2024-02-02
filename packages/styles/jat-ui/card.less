@@ -1,0 +1,35 @@
+.jat-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--jat-card-bgcolor);
+  box-sizing: border-box;
+  border-radius: 4px;
+  .jat-card__title--box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .jat-card__title--left {
+      display: flex;
+      align-items: center;
+      .jat-card__decorate {
+        display: inline-block;
+        width: 2px;
+        height: 16px;
+        margin-right: 6px;
+        background-image: linear-gradient(180deg, #1c83fb 0%, #0054b7 100%);
+      }
+      .jat-card__title {
+        margin-right: 12px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .jat-card__desc {
+        font-size: 14px;
+        color: #999999;
+      }
+    }
+  }
+  .jat-card__title--content {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,44 @@
+.el-message {
+  min-width: 270px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 8px;
+  .el-message__icon {
+    font-size: 18px;
+  }
+  .el-message__content {
+    color: var(--el-message-text-color);
+  }
+  .el-message__closeBtn {
+    font-size: 18px;
+    color: var(--el-message-close-color);
+  }
+}
+.el-message--success {
+  background: var(--el-message-success-bgcolor);
+  border: 1px solid #9fd6a8;
+  .el-message__icon {
+    color: #07b870;
+  }
+}
+.el-message--warning {
+  background: var(--el-message-warning-bgcolor);
+  border: 1px solid #f1924e;
+  .el-message__icon {
+    color: #ff6600;
+  }
+}
+.el-message--info {
+  background: var(--el-message-info-bgcolor);
+  border: 1px solid #94b4eb;
+  .el-message__icon {
+    color: #167cf3;
+  }
+}
+.el-message--error {
+  background: var(--el-message-error-bgcolor);
+  border: 1px solid #df4545;
+  .el-message__icon {
+    color: #fd5858;
+  }
+}
