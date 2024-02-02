@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: "JatUIContainer",
+  name: "JatContainer",
   props: {
     padding: {
       default: "16px",

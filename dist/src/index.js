@@ -1,9 +1,9 @@
-import JatButton from "../packages/button/index.js";
-import JatTable from "../packages/table/index.js";
+import JatCard from "../packages/Card/index.js";
+import JatContainer from "../packages/Container/index.js";
 
 const components = [
-  JatButton,
-  JatTable
+  JatCard,
+  JatContainer
 ]
 
 const install = function(Vue, opts={}) {
@@ -17,15 +17,15 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
-  JatButton,
-  JatTable,
-  install
+  install,
+  JatCard,
+  JatContainer
 }
 
 export default {
-  JatButton,
-  JatTable,
-  install
+  install,
+  JatCard,
+  JatContainer
 }
 
 // export default install

@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-  name: "JatUICard",
+  name: "JatCard",
   props: {
     padding: {
       default: "16px",

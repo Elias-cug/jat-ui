@@ -1,8 +1,8 @@
-import Button from './src/main.vue';
+import JatButton from "./src/main.vue"
 
 /* istanbul ignore next */
-Button.install = function(Vue) {
-  Vue.component(Button.name, Button);
+JatButton.install = function(Vue) {
+  Vue.component(JatButton.name, JatButton);
 };
 
-export default Button;
+export default JatButton;

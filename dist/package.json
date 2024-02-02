@@ -1,6 +1,6 @@
 {
   "name": "jat-ui",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "lib/jat-ui.cjs.js",
   "module": "lib/jat-ui.es.js",
   "license": "MIT",
@@ -8,7 +8,8 @@
   "scripts": {
     "build:comps": "rollup -c ./build/rollup.config.js",
     "build:styles": "rollup -c ./build/rollup.config.style.js",
-    "build": "yarn build:comps && yarn build:styles"
+    "build": "yarn build:comps && yarn build:styles",
+    "pub": "cd dist && npm publish"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
