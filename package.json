@@ -1,6 +1,6 @@
 {
   "name": "jat-ui",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "main": "lib/jat-ui.cjs.js",
   "module": "lib/jat-ui.es.js",
   "license": "MIT",
@@ -39,6 +39,8 @@
     "last 3 iOS versions"
   ],
   "dependencies": {
-    "element-ui": "2.15.14"
+    "@rollup/plugin-url": "^8.0.2",
+    "element-ui": "2.15.14",
+    "postcss-url": "^10.1.3"
   }
 }
